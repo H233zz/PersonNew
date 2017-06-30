@@ -1,0 +1,1381 @@
+
+activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="cn.bawei.com.newyuekao.MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        app:tabSelectedTextColor="#333093"
+        app:tabIndicatorColor="#333093"
+        android:layout_height="match_parent">
+    </android.support.design.widget.TabLayout>
+</LinearLayout>
+
+content.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="25sp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="33dp"
+            android:id="@+id/text" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+conten2.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="94dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="69dp"
+            android:textSize="20sp"
+            android:id="@+id/text1" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+fragment01.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout1"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
+
+fragment01_1.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.youth.banner.Banner>
+
+    <TextView
+        android:id="@+id/textVvvv"
+        android:layout_width="match_parent"
+        android:text="111111"
+        android:layout_height="wrap_content" />
+    <me.maxwin.view.XListView
+        android:id="@+id/xlisview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"></me.maxwin.view.XListView>
+
+
+</LinearLayout>
+
+fragment02.xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="222222222"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+</RelativeLayout>
+
+fragment03.xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="3333333"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+</RelativeLayout>
+
+
+fragment04.xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="444444444"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+</RelativeLayout>
+
+pag Adapter
+MyAdapter.java
+public class MyAdapter extends BaseAdapter {
+    Context context;
+    List<Listbean.DataBean.ComicsBean> list;
+    final int TYPE_1 = 0;
+    final int TYPE_2 = 1;
+
+    public MyAdapter(Context context,List<Listbean.DataBean.ComicsBean> list) {
+        this.context = context;
+        this.list = list;
+
+    }
+
+    @Override
+    public int getCount() {
+        return list.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return list.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getViewTypeCount() {
+        return 2;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        int i = position % 2;
+        switch (i){
+            case 1:return  TYPE_1;
+            default: return TYPE_2;
+        }
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder=null;
+        int type = getItemViewType(position);
+        if(convertView==null){
+            if (type==TYPE_1){
+                convertView=View.inflate(context, R.layout.content,null);
+                holder = new ViewHolder();
+                holder.text = (TextView) convertView.findViewById(R.id.text);
+                holder.imageView = (ImageView) convertView.findViewById(R.id.imageView);
+            }else{
+                convertView=View.inflate(context, R.layout.conten2,null);
+                holder = new ViewHolder();
+                holder.text1 = (TextView) convertView.findViewById(R.id.text1);
+            }
+            convertView.setTag(holder);
+        }else{
+            holder=(ViewHolder)convertView.getTag();
+        }
+        if (type==TYPE_1){
+            holder.text.setText("TYPE_1"+list.get(position).getTitle());
+            Glide.with(context).load(list.get(position).getCover_image_url()).into(holder.imageView);
+        }else{
+            holder.text1.setText("TYPE_2"+list.get(position).getTitle());
+        }
+        return convertView;
+    }
+
+    class ViewHolder{
+        TextView text,text1;
+        ImageView imageView;
+
+    }
+}
+
+pag  bean
+
+Images.java
+
+public class Images {
+
+    /**
+     * code : 200
+     * data : {"scheme":[],"infos":[{"action_type":0,"item_type":1,"action":"","title":"新版轮播图","banners":[{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1023,"pic":"http://f2.kkmh.com/image/170203/xxgdiyto4.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"浪漫香气","id":878,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":903,"pic":"http://f2.kkmh.com/image/170515/9a0wp5q7d.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"别闹我想静静","id":1519,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1033,"pic":"http://f2.kkmh.com/image/170509/nmmum3mpf.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"山神与小枣","id":987,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":133,"pic":"http://f2.kkmh.com/image/170527/75f0yq69c.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"贫穷父女","id":1673,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1098,"pic":"http://f2.kkmh.com/image/170512/ro0o5mhx2.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"悲伤的拳头","id":1494,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1095,"pic":"http://f2.kkmh.com/image/170505/b41vd2w9h.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"窈窕淑男","id":1420,"request_id":"-1","good_alias":"","chapter_count":6}]}]}
+     * message : ok
+     */
+
+    private int code;
+    private DataBean data;
+    private String message;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public DataBean getData() {
+        return data;
+    }
+
+    public void setData(DataBean data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public static class DataBean {
+        private List<?> scheme;
+        private List<InfosBean> infos;
+
+        public List<?> getScheme() {
+            return scheme;
+        }
+
+        public void setScheme(List<?> scheme) {
+            this.scheme = scheme;
+        }
+
+        public List<InfosBean> getInfos() {
+            return infos;
+        }
+
+        public void setInfos(List<InfosBean> infos) {
+            this.infos = infos;
+        }
+
+        public static class InfosBean {
+            /**
+             * action_type : 0
+             * item_type : 1
+             * action :
+             * title : 新版轮播图
+             * banners : [{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1023,"pic":"http://f2.kkmh.com/image/170203/xxgdiyto4.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"浪漫香气","id":878,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":903,"pic":"http://f2.kkmh.com/image/170515/9a0wp5q7d.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"别闹我想静静","id":1519,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1033,"pic":"http://f2.kkmh.com/image/170509/nmmum3mpf.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"山神与小枣","id":987,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":133,"pic":"http://f2.kkmh.com/image/170527/75f0yq69c.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"贫穷父女","id":1673,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1098,"pic":"http://f2.kkmh.com/image/170512/ro0o5mhx2.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"悲伤的拳头","id":1494,"request_id":"-1","good_alias":"","chapter_count":6},{"target_app_url":"","good_price":"","sub_title":"","special_list_url":"","target_id":1095,"pic":"http://f2.kkmh.com/image/170505/b41vd2w9h.webp","type":2,"target_package_name":"","hybrid_url":"","target_web_url":"","target_title":"窈窕淑男","id":1420,"request_id":"-1","good_alias":"","chapter_count":6}]
+             */
+
+            private int action_type;
+            private int item_type;
+            private String action;
+            private String title;
+            private List<BannersBean> banners;
+
+            public int getAction_type() {
+                return action_type;
+            }
+
+            public void setAction_type(int action_type) {
+                this.action_type = action_type;
+            }
+
+            public int getItem_type() {
+                return item_type;
+            }
+
+            public void setItem_type(int item_type) {
+                this.item_type = item_type;
+            }
+
+            public String getAction() {
+                return action;
+            }
+
+            public void setAction(String action) {
+                this.action = action;
+            }
+
+            public String getTitle() {
+                return title;
+            }
+
+            public void setTitle(String title) {
+                this.title = title;
+            }
+
+            public List<BannersBean> getBanners() {
+                return banners;
+            }
+
+            public void setBanners(List<BannersBean> banners) {
+                this.banners = banners;
+            }
+
+            public static class BannersBean {
+                /**
+                 * target_app_url :
+                 * good_price :
+                 * sub_title :
+                 * special_list_url :
+                 * target_id : 1023
+                 * pic : http://f2.kkmh.com/image/170203/xxgdiyto4.webp
+                 * type : 2
+                 * target_package_name :
+                 * hybrid_url :
+                 * target_web_url :
+                 * target_title : 浪漫香气
+                 * id : 878
+                 * request_id : -1
+                 * good_alias :
+                 * chapter_count : 6
+                 */
+
+                private String target_app_url;
+                private String good_price;
+                private String sub_title;
+                private String special_list_url;
+                private int target_id;
+                private String pic;
+                private int type;
+                private String target_package_name;
+                private String hybrid_url;
+                private String target_web_url;
+                private String target_title;
+                private int id;
+                private String request_id;
+                private String good_alias;
+                private int chapter_count;
+
+                public String getTarget_app_url() {
+                    return target_app_url;
+                }
+
+                public void setTarget_app_url(String target_app_url) {
+                    this.target_app_url = target_app_url;
+                }
+
+                public String getGood_price() {
+                    return good_price;
+                }
+
+                public void setGood_price(String good_price) {
+                    this.good_price = good_price;
+                }
+
+                public String getSub_title() {
+                    return sub_title;
+                }
+
+                public void setSub_title(String sub_title) {
+                    this.sub_title = sub_title;
+                }
+
+                public String getSpecial_list_url() {
+                    return special_list_url;
+                }
+
+                public void setSpecial_list_url(String special_list_url) {
+                    this.special_list_url = special_list_url;
+                }
+
+                public int getTarget_id() {
+                    return target_id;
+                }
+
+                public void setTarget_id(int target_id) {
+                    this.target_id = target_id;
+                }
+
+                public String getPic() {
+                    return pic;
+                }
+
+                public void setPic(String pic) {
+                    this.pic = pic;
+                }
+
+                public int getType() {
+                    return type;
+                }
+
+                public void setType(int type) {
+                    this.type = type;
+                }
+
+                public String getTarget_package_name() {
+                    return target_package_name;
+                }
+
+                public void setTarget_package_name(String target_package_name) {
+                    this.target_package_name = target_package_name;
+                }
+
+                public String getHybrid_url() {
+                    return hybrid_url;
+                }
+
+                public void setHybrid_url(String hybrid_url) {
+                    this.hybrid_url = hybrid_url;
+                }
+
+                public String getTarget_web_url() {
+                    return target_web_url;
+                }
+
+                public void setTarget_web_url(String target_web_url) {
+                    this.target_web_url = target_web_url;
+                }
+
+                public String getTarget_title() {
+                    return target_title;
+                }
+
+                public void setTarget_title(String target_title) {
+                    this.target_title = target_title;
+                }
+
+                public int getId() {
+                    return id;
+                }
+
+                public void setId(int id) {
+                    this.id = id;
+                }
+
+                public String getRequest_id() {
+                    return request_id;
+                }
+
+                public void setRequest_id(String request_id) {
+                    this.request_id = request_id;
+                }
+
+                public String getGood_alias() {
+                    return good_alias;
+                }
+
+                public void setGood_alias(String good_alias) {
+                    this.good_alias = good_alias;
+                }
+
+                public int getChapter_count() {
+                    return chapter_count;
+                }
+
+                public void setChapter_count(int chapter_count) {
+                    this.chapter_count = chapter_count;
+                }
+            }
+        }
+    }
+}
+
+
+Listbean.java
+public class Listbean {
+
+    /**
+     * code : 200
+     * data : {"comics":[{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170628/c00onsgg6.webp-w640","storyboard_cnt":60,"created_at":1498696822,"title":"第26话 会长的野望","url":"http://www.kuaikanmanhua.com/comics/28694","likes_count":134068,"updated_at":1498646059,"selling_kk_currency":0,"comments_count":2439,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161226/th1gzi9gn.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161226/0nk746yec.webp-w640","update_day":"(每周四更新)","description":"武力值MAX的道场继承人\u2014\u2014向小满，为了追男神，决定江湖洗手，转校做一个安安静静的柔弱女子。而未曾想到的是，踏入校园第一天，男神还没追到，却因超凡的战斗力，被学校不良少年误认为男神。究竟小满能否成为男神心中的理想型，顺利转变现有的画风呢？【独家/每周四更新 责编：半石】","created_at":1482734574,"title":"当校霸爱上学霸","update_status":"连载中","updated_at":1482734574,"id":991,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/161226/qcezbh4i7.webp-w180","grade":1,"nickname":"灿灿 /夏天岛","reg_type":"author","id":28863310},"label_id":15,"order":480,"comics_count":29},"shared_count":0,"id":28694,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#b400fa","cover_image_url":"http://f2.kkmh.com/image/170628/wil4c2p1m.webp-w640","storyboard_cnt":38,"created_at":1498696521,"title":"第50话 约会","url":"http://www.kuaikanmanhua.com/comics/28671","likes_count":105304,"updated_at":1498632049,"selling_kk_currency":0,"comments_count":2557,"label_text":"都市","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160707/weqf2wo63.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/170619/s8jpeb4jv.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161208/2etl9b67q.webp-w640","update_day":"","description":"关于职场的都市浪漫故事，萧艾艾醉酒后意外与高中学生会长\u201c同床共枕\u201d，而他竟是公司总裁，暗中帮助职场中屡屡受挫的她。腹黑霸道总裁与倔强单纯女职员，职场与情场波折却浪漫的故事。【独家/每周四更新 责编：林早上】","created_at":1467710670,"title":"与爱有关","update_status":"连载中","updated_at":1467710670,"id":869,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/150713/wmvmn02ny.jpg-w180","grade":1,"nickname":"空枣","reg_type":"author","id":1085041},"label_id":11,"order":470,"comics_count":52},"shared_count":0,"id":28671,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#3750ff","cover_image_url":"http://f2.kkmh.com/image/170628/ufco67hiq.webp-w640","storyboard_cnt":30,"created_at":1498696218,"title":"第8话 猫和老鼠事件（一）","url":"http://www.kuaikanmanhua.com/comics/28693","likes_count":71574,"updated_at":1498646056,"selling_kk_currency":0,"comments_count":4634,"label_text":"奇幻","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170511/w0vre70an.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170511/pd35pawh4.webp-w640","update_day":"(每周四更新)","description":"黄道十二宫总宫长阿步在人界寻找丢失的宠物狐仙，却因贪玩而留落人界，不想100年后，自家宠物突然出现在自己面前，还因偷吃仙丹昏睡100年导致失忆？看小狐仙如何与主人展开一系列的爆笑故事！【独家/每周四更新  责编：牛奶】","created_at":1494496399,"title":"我的宠物失忆了","update_status":"连载中","updated_at":1494496399,"id":1105,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170511/wj63k4tte.webp-w180","grade":1,"nickname":"barry+绘南","reg_type":"author","id":40710561},"label_id":25,"order":449,"comics_count":8},"shared_count":0,"id":28693,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170626/o30p6y0t7.webp-w640","storyboard_cnt":20,"created_at":1498695677,"title":"序章 回忆杂货店","url":"http://www.kuaikanmanhua.com/comics/28389","likes_count":21395,"updated_at":1498466026,"selling_kk_currency":0,"comments_count":764,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170605/n73x71lyl.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170605/icr2fpip0.webp-w640","update_day":"","description":"这是一个贩卖回忆的旧物杂货店，每一个物品都有其主人的独家记忆。圆滑大叔带领纯洁少女，给你讲述那些被人遗忘的回忆。【独家/每周五更新 责编：听雨】","created_at":1496642287,"title":"肆拾杂货店","update_status":"连载中","updated_at":1496642287,"id":1121,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170626/retqco0kd.webp-w180","grade":1,"nickname":"wuli爸爸爸爸","reg_type":"author","id":82054087},"label_id":23,"order":0,"comics_count":2},"shared_count":0,"id":28389,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#10beaa","cover_image_url":"http://f2.kkmh.com/image/170628/gcgrta9it.webp-w640","storyboard_cnt":65,"created_at":1498695312,"title":"第40话（下） 回到最初的地方","url":"http://www.kuaikanmanhua.com/comics/28697","likes_count":62087,"updated_at":1498647766,"selling_kk_currency":0,"comments_count":3171,"label_text":"青春","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/d92ojshef.webp-w320","cover_image_url":"http://f2.kkmh.com/image/160209/i2fjx6gzk.webp-w640","update_day":"(每周四更新)","description":"少女童夕回到小镇，再次遇到青梅竹马林南一，过去的阴影让他们变成陌生人。嫉妒与渴望，傲慢与偏见，清淡而带着苦涩香气的薄荷草，就像我们的青春。少男少女的朦胧之恋，青涩的心动，还有对未来的迷惘和期待\u2026\u2026【授权/每周四更新  责编：漠漠】","created_at":1455010804,"title":"薄荷之夏","update_status":"连载中","updated_at":1455010804,"id":720,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160209/f7ftddz66.webp-w180","grade":1,"nickname":"火禾","reg_type":"author","id":7412513},"label_id":41,"order":449,"comics_count":72},"shared_count":0,"id":28697,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#0096ff","cover_image_url":"http://f2.kkmh.com/image/170629/q0fhabpmc.webp-w640","storyboard_cnt":51,"created_at":1498695020,"title":"第1话 \u201c妖狐\u201d？","url":"http://www.kuaikanmanhua.com/comics/28105","likes_count":43009,"updated_at":1498213081,"selling_kk_currency":0,"comments_count":1326,"label_text":"日常","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170623/69s91rihz.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170623/tc15aotce.webp-w640","update_day":"(每周四更新)","description":"为了解决疑难案件，明朝两大敌对特务组织\u201c东厂\u201d和\u201c西厂\u201d被迫合作，看似天然，实则武功高强的白成灵and看似高冷，实则\u2026\u2026更加深不可测的韩于就这么相遇了。经历诸多权谋斗争，诡异事件，敌对的二人渐渐成为相互扶持的好伙伴。这是一部轻松搞笑又不乏严肃斗争的古装大作~~【独家/每周四更新   责编：水原】","created_at":1498183785,"title":"东西不东西","update_status":"连载中","updated_at":1498183785,"id":1162,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/170627/s76i440lb.webp-w180","grade":1,"nickname":"飞熊（九月光合）","reg_type":"author","id":40706718},"label_id":10,"order":0,"comics_count":2},"shared_count":0,"id":28105,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170524/rpbw52xza.webp-w640","storyboard_cnt":145,"created_at":1498694958,"title":"第8话 宝宝生气了","url":"http://www.kuaikanmanhua.com/comics/25781","likes_count":46090,"updated_at":1495526855,"selling_kk_currency":0,"comments_count":668,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170518/wch7h7nv2.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170518/jdbh3kut4.webp-w640","update_day":"(每周四更新)","description":"暗恋对象突然向我提出要一起养他的侄子，还要同居？！虽然不喜欢小孩，但又想和他一起生活，于是答应了他\u2026\u2026却没想到，随之而来的竟是如此艰难的育儿生活！【独家/每周四更新或支付KK币抢先看 责编：Uncle】","created_at":1495107823,"title":"养个孩子再恋爱","update_status":"连载中","updated_at":1495107823,"id":1110,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170518/4iadpm2nx.webp-w180","grade":1,"nickname":"MING","reg_type":"author","id":41124127},"label_id":23,"order":0,"comics_count":19},"shared_count":0,"id":25781,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#1e4691","cover_image_url":"http://f2.kkmh.com/image/170628/9dy6ken5e.webp-w640","storyboard_cnt":33,"created_at":1498694956,"title":"第70话 半张脸","url":"http://www.kuaikanmanhua.com/comics/28669","likes_count":39171,"updated_at":1498631885,"selling_kk_currency":0,"comments_count":959,"label_text":"悬疑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160401/o353395nb.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161220/xevidjo96.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170105/q57t3wfkk.webp-w640","update_day":"","description":"原汁原味的民间\u201c诡\u201d故事短篇集合。·明明是真实到令人心悸的事件，却能戳中你内心最柔软的部分，让你感动······【独家/每周四更新    责编：33】\r\n","created_at":1457515483,"title":"枪爷讲诡事","update_status":"连载中","updated_at":1457515483,"id":754,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160309/nnd82ej5m.webp-w180","grade":1,"nickname":"转轮手枪","reg_type":"author","id":9210062},"label_id":32,"order":498,"comics_count":70},"shared_count":0,"id":28669,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170627/0u4gbu58m.webp-w640","storyboard_cnt":34,"created_at":1498694899,"title":"第8话 解围","url":"http://www.kuaikanmanhua.com/comics/28515","likes_count":45044,"updated_at":1498548442,"selling_kk_currency":0,"comments_count":1099,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170518/xvpvga307.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170518/u74kunxff.webp-w640","update_day":"(每周四更新)","description":"注定会和他接吻的命运！？17岁生日那天，我和同班最有人气的男生接吻了。为何是和我最不擅长对付的他！大受打击！时间若是能倒流回接吻之前就好了。第二天，他一脸什么事都没发生的样子。骗人吧？日期根本没有变化！难道时间真的倒流了？【独家/每周四更新，责编：水原 】","created_at":1495115871,"title":"千万次的初吻","update_status":"连载中","updated_at":1495115871,"id":1111,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170518/hyt0soyth.webp-w180","grade":1,"nickname":"Keita Kanamori","reg_type":"author","id":41130426},"label_id":15,"order":0,"comics_count":9},"shared_count":0,"id":28515,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#7c5099","cover_image_url":"http://f2.kkmh.com/image/170628/grootdnp3.webp-w640","storyboard_cnt":120,"created_at":1498694415,"title":"沉默盒（六）","url":"http://www.kuaikanmanhua.com/comics/28525","likes_count":25445,"updated_at":1498556104,"selling_kk_currency":0,"comments_count":944,"label_text":"灵异","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170616/rm8ex0wx6.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170616/miaujen7x.webp-w640","update_day":"(每周四更新)","description":"诡异悬疑的系列故事，给你毛骨悚然的恐怖体验和关于人性的深沉思考！后背发凉，细思恐极，顶尖恐怖漫画作品，祝耕夫老师最新力作《恶魔的书架》\u2014\u2014嘘~不要被吓到了【独家/每周四更新  责编：大树】","created_at":1497583263,"title":"恶魔的书架","update_status":"连载中","updated_at":1497583263,"id":1135,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160620/7b5z7p98u.webp-w180","grade":1,"nickname":"祝耕夫","reg_type":"weibo","id":103757},"label_id":16,"order":0,"comics_count":6},"shared_count":0,"id":28525,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170524/psepn72q7.webp-w640","storyboard_cnt":70,"created_at":1498694116,"title":"第11话 好像夫妻啊","url":"http://www.kuaikanmanhua.com/comics/25340","likes_count":42081,"updated_at":1494496274,"selling_kk_currency":0,"comments_count":373,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170508/7x8tqzp0l.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170508/es5pmhwbg.webp-w640","update_day":"(每周四更新)","description":"突然寄宿在老师家，脸红心跳的每一天，老师、痞子、学生会长、女装男子\u2026被迫和各种美男子相处，相信我！我真的只想\u2026只想学习啊！【独家/每周四更新或支付KK币抢先看 责编：Uncle】（注：本作品文字阅读顺序为从右至左）","created_at":1494238744,"title":"同居是为了学习","update_status":"连载中","updated_at":1494238744,"id":1101,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170508/mwj0dejl9.webp-w180","grade":1,"nickname":"Sauro","reg_type":"author","id":40572126},"label_id":15,"order":0,"comics_count":22},"shared_count":0,"id":25340,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#0096ff","cover_image_url":"http://f2.kkmh.com/image/170628/3ffjj8y1n.webp-w640","storyboard_cnt":30,"created_at":1498693814,"title":"第71话 一个世纪的等待","url":"http://www.kuaikanmanhua.com/comics/28699","likes_count":33468,"updated_at":1498649701,"selling_kk_currency":0,"comments_count":454,"label_text":"日常","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170210/bhga1dfng.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170210/x60dmcm00.webp-w640","update_day":"(每周二、周四、周日更新)","description":"无厘头双胞胎的蛇精病日常爆笑上线，且看两人如何秒秒钟作死，分分钟上天！拦都拦不住的魔性神作！让你笑到精分，笑到炸裂！【独家/每周二、周四、周日更新 责编：珉xi】","created_at":1485280931,"title":"双胞胎Twins","update_status":"连载中","updated_at":1485280931,"id":1027,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170316/9fk55n9m5.webp-w180","grade":1,"nickname":"sengae/Daum Webtoon","reg_type":"author","id":31703039},"label_id":10,"order":460,"comics_count":73},"shared_count":0,"id":28699,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#6e68ff","cover_image_url":"http://f2.kkmh.com/image/170628/hwo77t3w5.webp-w640","storyboard_cnt":26,"created_at":1498693213,"title":"第57话 不要在用禁术了","url":"http://www.kuaikanmanhua.com/comics/28685","likes_count":32285,"updated_at":1498640747,"selling_kk_currency":0,"comments_count":409,"label_text":"剧情","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160511/o5mzlauku.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161220/meiczq4h1.webp-w320","cover_image_url":"http://f2.kkmh.com/image/160427/ccy441ru1.webp-w640","update_day":"(每周四更新)","description":"绝美桃花妖痴心守护小萝莉，人妖殊途，两人历经磨难。由一段剪不断理还乱的暧昧感情，引出了关于医术、爱情、友情以及前世今生的旷世奇缘！【独家/每周四更新 责编：林早上】","created_at":1461730311,"title":"桃花灼","update_status":"连载中","updated_at":1461730311,"id":785,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/160816/gjgohgk8x.webp-w180","grade":1,"nickname":"星空社","reg_type":"author","id":10978521},"label_id":17,"order":400,"comics_count":57},"shared_count":0,"id":28685,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170628/9vmpdblru.webp-w640","storyboard_cnt":40,"created_at":1498692912,"title":"第4话 小心点","url":"http://www.kuaikanmanhua.com/comics/28698","likes_count":9131,"updated_at":1498649215,"selling_kk_currency":0,"comments_count":127,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170620/pjdyzuzdn.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170626/yxpoza8xq.webp-w640","update_day":"","description":"大魔王的特长竟然是洗碗？！用价值十块的灵魂让他帮我洗了次碗，从此他就赖上我了，而我也一次又一次地与他签订了灵魂买卖契约\u2026\u2026【独家首发/6月26日起连更8天后每周一周三更新 责编：楚宁】","created_at":1497839069,"title":"洗碗大魔王","update_status":"连载中","updated_at":1497839069,"id":1141,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170619/mejud7au6.webp-w180","grade":1,"nickname":"提供方：多蕴文化，图/文：九楼/新于宙","reg_type":"author","id":81604717},"label_id":15,"order":0,"comics_count":4},"shared_count":0,"id":28698,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#ff7300","cover_image_url":"http://f2.kkmh.com/image/170628/bd0jwaopi.webp-w640","storyboard_cnt":30,"created_at":1498692611,"title":"第31话 有种flag说必死！","url":"http://www.kuaikanmanhua.com/comics/28678","likes_count":25731,"updated_at":1498635653,"selling_kk_currency":0,"comments_count":456,"label_text":"爆笑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/bmcs1d5hp.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161127/bo7msumnz.webp-w640","update_day":"(每周四更新)","description":"运气超差的美男除妖师，连续四年毕业考试都抽到最难考题\u2014\u2014顶级妖王！却因除妖能力太弱而一直无法毕业？！从此踏上无证除妖之路，展开了与妖王不得不说的爆笑故事！【独家/每周四更新  责编：牛奶】","created_at":1480176595,"title":"无证除妖师","update_status":"连载中","updated_at":1480176595,"id":971,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/170329/fdfplspjj.webp-w180","grade":1,"nickname":"白海参（九月光合）","reg_type":"author","id":27398349},"label_id":5,"order":300,"comics_count":31},"shared_count":0,"id":28678,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#3750ff","cover_image_url":"http://f2.kkmh.com/image/170627/6c1uw359o.webp-w640","storyboard_cnt":31,"created_at":1498692309,"title":"第1话 突如其来的变异","url":"http://www.kuaikanmanhua.com/comics/27974","likes_count":16047,"updated_at":1498109806,"selling_kk_currency":0,"comments_count":938,"label_text":"奇幻","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170622/6nz1zlfpi.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170622/9cjmza6pg.webp-w640","update_day":"(每周五更新)","description":"某日，一向风平浪静的人类最高学府\u2014\u2014学园圣域突然发生异变，学园中的大部分人都变成了行尸走肉般的【丧魂者】。主人公夜北在逃亡的路上碰巧遇上了一位自称要找到【载体】的神秘少女\u2026\u2026异变的背后到底隐藏着什么样的秘密？【百漫授权/每周五更新 责编：漠漠】","created_at":1498109669,"title":"造物法则","update_status":"连载中","updated_at":1498109669,"id":1158,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170622/9cdkvh5y1.webp-w180","grade":1,"nickname":"百漫马赛克工作室","reg_type":"author","id":81766239},"label_id":25,"order":0,"comics_count":104},"shared_count":0,"id":27974,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#6e68ff","cover_image_url":"http://f2.kkmh.com/image/170627/lzig7ve9u.webp-w640","storyboard_cnt":65,"created_at":1498692009,"title":"第30话 真正的目标","url":"http://www.kuaikanmanhua.com/comics/28526","likes_count":12173,"updated_at":1498556156,"selling_kk_currency":0,"comments_count":436,"label_text":"剧情","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170106/g24ymfu8l.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170106/hced9u4y2.webp-w640","update_day":"(每周四更新)","description":"覆盖全国范围的死刑投票短信突然出现，每个成年人都能决定重案嫌疑人的生死。当生杀大权交与平凡民众，正义与真理、规则与混沌将如何界定？【独家/每周四更新 责编：Uncle】","created_at":1483704829,"title":"国民死刑投票","update_status":"连载中","updated_at":1483704829,"id":1000,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/default_avatar_image.jpg-w180","grade":1,"nickname":"Eom seyun, Jung Ipum / Daum Webtoon","reg_type":"author","id":30525524},"label_id":17,"order":400,"comics_count":30},"shared_count":0,"id":28526,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170627/98f6mp6n7.webp-w640","storyboard_cnt":35,"created_at":1498691710,"title":"第14话 笑里藏刀","url":"http://www.kuaikanmanhua.com/comics/28516","likes_count":9179,"updated_at":1498549703,"selling_kk_currency":0,"comments_count":139,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170415/k02plqhh4.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170415/vlm5u3rsp.webp-w640","update_day":"(每周四更新)","description":"迷恋男友的妮娜死后仍旧徘徊在人间。冷酷的阴间使者石泉在执行命令的过程中，对天真烂漫的她萌生了情感。但她的秘密似乎和死神界有关，真相即将揭晓！【独家/每周四更新 责编：水原】","created_at":1492202485,"title":"甜蜜驱魔","update_status":"连载中","updated_at":1492202485,"id":1077,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/default_avatar_image.jpg-w180","grade":1,"nickname":"序芽","reg_type":"author","id":38950827},"label_id":15,"order":0,"comics_count":15},"shared_count":0,"id":28516,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170627/713lq2n8m.webp-w640","storyboard_cnt":40,"created_at":1498691407,"title":"第50话 简单的交流","url":"http://www.kuaikanmanhua.com/comics/28484","likes_count":8963,"updated_at":1498535297,"selling_kk_currency":0,"comments_count":138,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160623/l30ev3rzi.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161214/2vv9zrbu6.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161230/xvdha49t9.webp-w640","update_day":"(每周四更新)","description":"依靠创作漫画为生的他突然失明，本陷入绝望深渊中，却偶然遇上失聪的她，两人坠入爱河\u2026\u2026尽管看不到也听不到，但他们相爱着，比任何人都幸福。然而他们并不知道，这短暂的幸福前面，还有更大的苦难在等着他们\u2026\u2026【独家/每周四更新，责编：半石】","created_at":1466492717,"title":"看不见听不见的爱","update_status":"连载中","updated_at":1466492717,"id":854,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/160621/423m3brwe.webp-w180","grade":1,"nickname":"nasty cat/Daum Webtoon","reg_type":"author","id":15215177},"label_id":23,"order":400,"comics_count":55},"shared_count":0,"id":28484,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#ff7300","cover_image_url":"http://f2.kkmh.com/image/170626/h8zy0wmwv.webp-w640","storyboard_cnt":65,"created_at":1498691106,"title":"第40话 小云！小芸！（2）","url":"http://www.kuaikanmanhua.com/comics/28231","likes_count":11719,"updated_at":1498458769,"selling_kk_currency":0,"comments_count":199,"label_text":"爆笑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/229tjt2tt.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170329/b30yizpad.webp-w640","update_day":"(每周四更新)","description":"身体羸弱的少年桂小云误食龙珠，不但获得了八块腹肌人鱼线，还获得了一个美艳的未婚妻？【授权/每周四更新 责编：Uncle】","created_at":1474446017,"title":"你好！三公主","update_status":"连载中","updated_at":1474446017,"id":933,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160801/7oz8v6u9v.webp-w180","grade":1,"nickname":"阿桂","reg_type":"author","id":19390707},"label_id":5,"order":0,"comics_count":40},"shared_count":0,"id":28231,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false}],"recommend":[],"timestamp":1498665600,"since":1498691106}
+     * message : ok
+     */
+
+    private int code;
+    private DataBean data;
+    private String message;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public DataBean getData() {
+        return data;
+    }
+
+    public void setData(DataBean data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public static class DataBean {
+        /**
+         * comics : [{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170628/c00onsgg6.webp-w640","storyboard_cnt":60,"created_at":1498696822,"title":"第26话 会长的野望","url":"http://www.kuaikanmanhua.com/comics/28694","likes_count":134068,"updated_at":1498646059,"selling_kk_currency":0,"comments_count":2439,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161226/th1gzi9gn.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161226/0nk746yec.webp-w640","update_day":"(每周四更新)","description":"武力值MAX的道场继承人\u2014\u2014向小满，为了追男神，决定江湖洗手，转校做一个安安静静的柔弱女子。而未曾想到的是，踏入校园第一天，男神还没追到，却因超凡的战斗力，被学校不良少年误认为男神。究竟小满能否成为男神心中的理想型，顺利转变现有的画风呢？【独家/每周四更新 责编：半石】","created_at":1482734574,"title":"当校霸爱上学霸","update_status":"连载中","updated_at":1482734574,"id":991,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/161226/qcezbh4i7.webp-w180","grade":1,"nickname":"灿灿 /夏天岛","reg_type":"author","id":28863310},"label_id":15,"order":480,"comics_count":29},"shared_count":0,"id":28694,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#b400fa","cover_image_url":"http://f2.kkmh.com/image/170628/wil4c2p1m.webp-w640","storyboard_cnt":38,"created_at":1498696521,"title":"第50话 约会","url":"http://www.kuaikanmanhua.com/comics/28671","likes_count":105304,"updated_at":1498632049,"selling_kk_currency":0,"comments_count":2557,"label_text":"都市","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160707/weqf2wo63.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/170619/s8jpeb4jv.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161208/2etl9b67q.webp-w640","update_day":"","description":"关于职场的都市浪漫故事，萧艾艾醉酒后意外与高中学生会长\u201c同床共枕\u201d，而他竟是公司总裁，暗中帮助职场中屡屡受挫的她。腹黑霸道总裁与倔强单纯女职员，职场与情场波折却浪漫的故事。【独家/每周四更新 责编：林早上】","created_at":1467710670,"title":"与爱有关","update_status":"连载中","updated_at":1467710670,"id":869,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/150713/wmvmn02ny.jpg-w180","grade":1,"nickname":"空枣","reg_type":"author","id":1085041},"label_id":11,"order":470,"comics_count":52},"shared_count":0,"id":28671,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#3750ff","cover_image_url":"http://f2.kkmh.com/image/170628/ufco67hiq.webp-w640","storyboard_cnt":30,"created_at":1498696218,"title":"第8话 猫和老鼠事件（一）","url":"http://www.kuaikanmanhua.com/comics/28693","likes_count":71574,"updated_at":1498646056,"selling_kk_currency":0,"comments_count":4634,"label_text":"奇幻","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170511/w0vre70an.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170511/pd35pawh4.webp-w640","update_day":"(每周四更新)","description":"黄道十二宫总宫长阿步在人界寻找丢失的宠物狐仙，却因贪玩而留落人界，不想100年后，自家宠物突然出现在自己面前，还因偷吃仙丹昏睡100年导致失忆？看小狐仙如何与主人展开一系列的爆笑故事！【独家/每周四更新  责编：牛奶】","created_at":1494496399,"title":"我的宠物失忆了","update_status":"连载中","updated_at":1494496399,"id":1105,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170511/wj63k4tte.webp-w180","grade":1,"nickname":"barry+绘南","reg_type":"author","id":40710561},"label_id":25,"order":449,"comics_count":8},"shared_count":0,"id":28693,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170626/o30p6y0t7.webp-w640","storyboard_cnt":20,"created_at":1498695677,"title":"序章 回忆杂货店","url":"http://www.kuaikanmanhua.com/comics/28389","likes_count":21395,"updated_at":1498466026,"selling_kk_currency":0,"comments_count":764,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170605/n73x71lyl.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170605/icr2fpip0.webp-w640","update_day":"","description":"这是一个贩卖回忆的旧物杂货店，每一个物品都有其主人的独家记忆。圆滑大叔带领纯洁少女，给你讲述那些被人遗忘的回忆。【独家/每周五更新 责编：听雨】","created_at":1496642287,"title":"肆拾杂货店","update_status":"连载中","updated_at":1496642287,"id":1121,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170626/retqco0kd.webp-w180","grade":1,"nickname":"wuli爸爸爸爸","reg_type":"author","id":82054087},"label_id":23,"order":0,"comics_count":2},"shared_count":0,"id":28389,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#10beaa","cover_image_url":"http://f2.kkmh.com/image/170628/gcgrta9it.webp-w640","storyboard_cnt":65,"created_at":1498695312,"title":"第40话（下） 回到最初的地方","url":"http://www.kuaikanmanhua.com/comics/28697","likes_count":62087,"updated_at":1498647766,"selling_kk_currency":0,"comments_count":3171,"label_text":"青春","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/d92ojshef.webp-w320","cover_image_url":"http://f2.kkmh.com/image/160209/i2fjx6gzk.webp-w640","update_day":"(每周四更新)","description":"少女童夕回到小镇，再次遇到青梅竹马林南一，过去的阴影让他们变成陌生人。嫉妒与渴望，傲慢与偏见，清淡而带着苦涩香气的薄荷草，就像我们的青春。少男少女的朦胧之恋，青涩的心动，还有对未来的迷惘和期待\u2026\u2026【授权/每周四更新  责编：漠漠】","created_at":1455010804,"title":"薄荷之夏","update_status":"连载中","updated_at":1455010804,"id":720,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160209/f7ftddz66.webp-w180","grade":1,"nickname":"火禾","reg_type":"author","id":7412513},"label_id":41,"order":449,"comics_count":72},"shared_count":0,"id":28697,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#0096ff","cover_image_url":"http://f2.kkmh.com/image/170629/q0fhabpmc.webp-w640","storyboard_cnt":51,"created_at":1498695020,"title":"第1话 \u201c妖狐\u201d？","url":"http://www.kuaikanmanhua.com/comics/28105","likes_count":43009,"updated_at":1498213081,"selling_kk_currency":0,"comments_count":1326,"label_text":"日常","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170623/69s91rihz.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170623/tc15aotce.webp-w640","update_day":"(每周四更新)","description":"为了解决疑难案件，明朝两大敌对特务组织\u201c东厂\u201d和\u201c西厂\u201d被迫合作，看似天然，实则武功高强的白成灵and看似高冷，实则\u2026\u2026更加深不可测的韩于就这么相遇了。经历诸多权谋斗争，诡异事件，敌对的二人渐渐成为相互扶持的好伙伴。这是一部轻松搞笑又不乏严肃斗争的古装大作~~【独家/每周四更新   责编：水原】","created_at":1498183785,"title":"东西不东西","update_status":"连载中","updated_at":1498183785,"id":1162,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/170627/s76i440lb.webp-w180","grade":1,"nickname":"飞熊（九月光合）","reg_type":"author","id":40706718},"label_id":10,"order":0,"comics_count":2},"shared_count":0,"id":28105,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170524/rpbw52xza.webp-w640","storyboard_cnt":145,"created_at":1498694958,"title":"第8话 宝宝生气了","url":"http://www.kuaikanmanhua.com/comics/25781","likes_count":46090,"updated_at":1495526855,"selling_kk_currency":0,"comments_count":668,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170518/wch7h7nv2.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170518/jdbh3kut4.webp-w640","update_day":"(每周四更新)","description":"暗恋对象突然向我提出要一起养他的侄子，还要同居？！虽然不喜欢小孩，但又想和他一起生活，于是答应了他\u2026\u2026却没想到，随之而来的竟是如此艰难的育儿生活！【独家/每周四更新或支付KK币抢先看 责编：Uncle】","created_at":1495107823,"title":"养个孩子再恋爱","update_status":"连载中","updated_at":1495107823,"id":1110,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170518/4iadpm2nx.webp-w180","grade":1,"nickname":"MING","reg_type":"author","id":41124127},"label_id":23,"order":0,"comics_count":19},"shared_count":0,"id":25781,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#1e4691","cover_image_url":"http://f2.kkmh.com/image/170628/9dy6ken5e.webp-w640","storyboard_cnt":33,"created_at":1498694956,"title":"第70话 半张脸","url":"http://www.kuaikanmanhua.com/comics/28669","likes_count":39171,"updated_at":1498631885,"selling_kk_currency":0,"comments_count":959,"label_text":"悬疑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160401/o353395nb.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161220/xevidjo96.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170105/q57t3wfkk.webp-w640","update_day":"","description":"原汁原味的民间\u201c诡\u201d故事短篇集合。·明明是真实到令人心悸的事件，却能戳中你内心最柔软的部分，让你感动······【独家/每周四更新    责编：33】\r\n","created_at":1457515483,"title":"枪爷讲诡事","update_status":"连载中","updated_at":1457515483,"id":754,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160309/nnd82ej5m.webp-w180","grade":1,"nickname":"转轮手枪","reg_type":"author","id":9210062},"label_id":32,"order":498,"comics_count":70},"shared_count":0,"id":28669,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170627/0u4gbu58m.webp-w640","storyboard_cnt":34,"created_at":1498694899,"title":"第8话 解围","url":"http://www.kuaikanmanhua.com/comics/28515","likes_count":45044,"updated_at":1498548442,"selling_kk_currency":0,"comments_count":1099,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170518/xvpvga307.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170518/u74kunxff.webp-w640","update_day":"(每周四更新)","description":"注定会和他接吻的命运！？17岁生日那天，我和同班最有人气的男生接吻了。为何是和我最不擅长对付的他！大受打击！时间若是能倒流回接吻之前就好了。第二天，他一脸什么事都没发生的样子。骗人吧？日期根本没有变化！难道时间真的倒流了？【独家/每周四更新，责编：水原 】","created_at":1495115871,"title":"千万次的初吻","update_status":"连载中","updated_at":1495115871,"id":1111,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170518/hyt0soyth.webp-w180","grade":1,"nickname":"Keita Kanamori","reg_type":"author","id":41130426},"label_id":15,"order":0,"comics_count":9},"shared_count":0,"id":28515,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#7c5099","cover_image_url":"http://f2.kkmh.com/image/170628/grootdnp3.webp-w640","storyboard_cnt":120,"created_at":1498694415,"title":"沉默盒（六）","url":"http://www.kuaikanmanhua.com/comics/28525","likes_count":25445,"updated_at":1498556104,"selling_kk_currency":0,"comments_count":944,"label_text":"灵异","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170616/rm8ex0wx6.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170616/miaujen7x.webp-w640","update_day":"(每周四更新)","description":"诡异悬疑的系列故事，给你毛骨悚然的恐怖体验和关于人性的深沉思考！后背发凉，细思恐极，顶尖恐怖漫画作品，祝耕夫老师最新力作《恶魔的书架》\u2014\u2014嘘~不要被吓到了【独家/每周四更新  责编：大树】","created_at":1497583263,"title":"恶魔的书架","update_status":"连载中","updated_at":1497583263,"id":1135,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160620/7b5z7p98u.webp-w180","grade":1,"nickname":"祝耕夫","reg_type":"weibo","id":103757},"label_id":16,"order":0,"comics_count":6},"shared_count":0,"id":28525,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170524/psepn72q7.webp-w640","storyboard_cnt":70,"created_at":1498694116,"title":"第11话 好像夫妻啊","url":"http://www.kuaikanmanhua.com/comics/25340","likes_count":42081,"updated_at":1494496274,"selling_kk_currency":0,"comments_count":373,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170508/7x8tqzp0l.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170508/es5pmhwbg.webp-w640","update_day":"(每周四更新)","description":"突然寄宿在老师家，脸红心跳的每一天，老师、痞子、学生会长、女装男子\u2026被迫和各种美男子相处，相信我！我真的只想\u2026只想学习啊！【独家/每周四更新或支付KK币抢先看 责编：Uncle】（注：本作品文字阅读顺序为从右至左）","created_at":1494238744,"title":"同居是为了学习","update_status":"连载中","updated_at":1494238744,"id":1101,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170508/mwj0dejl9.webp-w180","grade":1,"nickname":"Sauro","reg_type":"author","id":40572126},"label_id":15,"order":0,"comics_count":22},"shared_count":0,"id":25340,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#0096ff","cover_image_url":"http://f2.kkmh.com/image/170628/3ffjj8y1n.webp-w640","storyboard_cnt":30,"created_at":1498693814,"title":"第71话 一个世纪的等待","url":"http://www.kuaikanmanhua.com/comics/28699","likes_count":33468,"updated_at":1498649701,"selling_kk_currency":0,"comments_count":454,"label_text":"日常","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170210/bhga1dfng.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170210/x60dmcm00.webp-w640","update_day":"(每周二、周四、周日更新)","description":"无厘头双胞胎的蛇精病日常爆笑上线，且看两人如何秒秒钟作死，分分钟上天！拦都拦不住的魔性神作！让你笑到精分，笑到炸裂！【独家/每周二、周四、周日更新 责编：珉xi】","created_at":1485280931,"title":"双胞胎Twins","update_status":"连载中","updated_at":1485280931,"id":1027,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170316/9fk55n9m5.webp-w180","grade":1,"nickname":"sengae/Daum Webtoon","reg_type":"author","id":31703039},"label_id":10,"order":460,"comics_count":73},"shared_count":0,"id":28699,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#6e68ff","cover_image_url":"http://f2.kkmh.com/image/170628/hwo77t3w5.webp-w640","storyboard_cnt":26,"created_at":1498693213,"title":"第57话 不要在用禁术了","url":"http://www.kuaikanmanhua.com/comics/28685","likes_count":32285,"updated_at":1498640747,"selling_kk_currency":0,"comments_count":409,"label_text":"剧情","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160511/o5mzlauku.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161220/meiczq4h1.webp-w320","cover_image_url":"http://f2.kkmh.com/image/160427/ccy441ru1.webp-w640","update_day":"(每周四更新)","description":"绝美桃花妖痴心守护小萝莉，人妖殊途，两人历经磨难。由一段剪不断理还乱的暧昧感情，引出了关于医术、爱情、友情以及前世今生的旷世奇缘！【独家/每周四更新 责编：林早上】","created_at":1461730311,"title":"桃花灼","update_status":"连载中","updated_at":1461730311,"id":785,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/160816/gjgohgk8x.webp-w180","grade":1,"nickname":"星空社","reg_type":"author","id":10978521},"label_id":17,"order":400,"comics_count":57},"shared_count":0,"id":28685,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170628/9vmpdblru.webp-w640","storyboard_cnt":40,"created_at":1498692912,"title":"第4话 小心点","url":"http://www.kuaikanmanhua.com/comics/28698","likes_count":9131,"updated_at":1498649215,"selling_kk_currency":0,"comments_count":127,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170620/pjdyzuzdn.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170626/yxpoza8xq.webp-w640","update_day":"","description":"大魔王的特长竟然是洗碗？！用价值十块的灵魂让他帮我洗了次碗，从此他就赖上我了，而我也一次又一次地与他签订了灵魂买卖契约\u2026\u2026【独家首发/6月26日起连更8天后每周一周三更新 责编：楚宁】","created_at":1497839069,"title":"洗碗大魔王","update_status":"连载中","updated_at":1497839069,"id":1141,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170619/mejud7au6.webp-w180","grade":1,"nickname":"提供方：多蕴文化，图/文：九楼/新于宙","reg_type":"author","id":81604717},"label_id":15,"order":0,"comics_count":4},"shared_count":0,"id":28698,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#ff7300","cover_image_url":"http://f2.kkmh.com/image/170628/bd0jwaopi.webp-w640","storyboard_cnt":30,"created_at":1498692611,"title":"第31话 有种flag说必死！","url":"http://www.kuaikanmanhua.com/comics/28678","likes_count":25731,"updated_at":1498635653,"selling_kk_currency":0,"comments_count":456,"label_text":"爆笑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/bmcs1d5hp.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161127/bo7msumnz.webp-w640","update_day":"(每周四更新)","description":"运气超差的美男除妖师，连续四年毕业考试都抽到最难考题\u2014\u2014顶级妖王！却因除妖能力太弱而一直无法毕业？！从此踏上无证除妖之路，展开了与妖王不得不说的爆笑故事！【独家/每周四更新  责编：牛奶】","created_at":1480176595,"title":"无证除妖师","update_status":"连载中","updated_at":1480176595,"id":971,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/170329/fdfplspjj.webp-w180","grade":1,"nickname":"白海参（九月光合）","reg_type":"author","id":27398349},"label_id":5,"order":300,"comics_count":31},"shared_count":0,"id":28678,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#3750ff","cover_image_url":"http://f2.kkmh.com/image/170627/6c1uw359o.webp-w640","storyboard_cnt":31,"created_at":1498692309,"title":"第1话 突如其来的变异","url":"http://www.kuaikanmanhua.com/comics/27974","likes_count":16047,"updated_at":1498109806,"selling_kk_currency":0,"comments_count":938,"label_text":"奇幻","zoomable":0,"is_free":true,"push_flag":0,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170622/6nz1zlfpi.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170622/9cjmza6pg.webp-w640","update_day":"(每周五更新)","description":"某日，一向风平浪静的人类最高学府\u2014\u2014学园圣域突然发生异变，学园中的大部分人都变成了行尸走肉般的【丧魂者】。主人公夜北在逃亡的路上碰巧遇上了一位自称要找到【载体】的神秘少女\u2026\u2026异变的背后到底隐藏着什么样的秘密？【百漫授权/每周五更新 责编：漠漠】","created_at":1498109669,"title":"造物法则","update_status":"连载中","updated_at":1498109669,"id":1158,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/170622/9cdkvh5y1.webp-w180","grade":1,"nickname":"百漫马赛克工作室","reg_type":"author","id":81766239},"label_id":25,"order":0,"comics_count":104},"shared_count":0,"id":27974,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#6e68ff","cover_image_url":"http://f2.kkmh.com/image/170627/lzig7ve9u.webp-w640","storyboard_cnt":65,"created_at":1498692009,"title":"第30话 真正的目标","url":"http://www.kuaikanmanhua.com/comics/28526","likes_count":12173,"updated_at":1498556156,"selling_kk_currency":0,"comments_count":436,"label_text":"剧情","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170106/g24ymfu8l.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170106/hced9u4y2.webp-w640","update_day":"(每周四更新)","description":"覆盖全国范围的死刑投票短信突然出现，每个成年人都能决定重案嫌疑人的生死。当生杀大权交与平凡民众，正义与真理、规则与混沌将如何界定？【独家/每周四更新 责编：Uncle】","created_at":1483704829,"title":"国民死刑投票","update_status":"连载中","updated_at":1483704829,"id":1000,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/default_avatar_image.jpg-w180","grade":1,"nickname":"Eom seyun, Jung Ipum / Daum Webtoon","reg_type":"author","id":30525524},"label_id":17,"order":400,"comics_count":30},"shared_count":0,"id":28526,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#fa6499","cover_image_url":"http://f2.kkmh.com/image/170627/98f6mp6n7.webp-w640","storyboard_cnt":35,"created_at":1498691710,"title":"第14话 笑里藏刀","url":"http://www.kuaikanmanhua.com/comics/28516","likes_count":9179,"updated_at":1498549703,"selling_kk_currency":0,"comments_count":139,"label_text":"恋爱","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/170415/k02plqhh4.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170415/vlm5u3rsp.webp-w640","update_day":"(每周四更新)","description":"迷恋男友的妮娜死后仍旧徘徊在人间。冷酷的阴间使者石泉在执行命令的过程中，对天真烂漫的她萌生了情感。但她的秘密似乎和死神界有关，真相即将揭晓！【独家/每周四更新 责编：水原】","created_at":1492202485,"title":"甜蜜驱魔","update_status":"连载中","updated_at":1492202485,"id":1077,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/default_avatar_image.jpg-w180","grade":1,"nickname":"序芽","reg_type":"author","id":38950827},"label_id":15,"order":0,"comics_count":15},"shared_count":0,"id":28516,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#bbc23a","cover_image_url":"http://f2.kkmh.com/image/170627/713lq2n8m.webp-w640","storyboard_cnt":40,"created_at":1498691407,"title":"第50话 简单的交流","url":"http://www.kuaikanmanhua.com/comics/28484","likes_count":8963,"updated_at":1498535297,"selling_kk_currency":0,"comments_count":138,"label_text":"治愈","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"http://f2.kkmh.com/image/160623/l30ev3rzi.webp-w750","vertical_image_url":"http://f2.kkmh.com/image/161214/2vv9zrbu6.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161230/xvdha49t9.webp-w640","update_day":"(每周四更新)","description":"依靠创作漫画为生的他突然失明，本陷入绝望深渊中，却偶然遇上失聪的她，两人坠入爱河\u2026\u2026尽管看不到也听不到，但他们相爱着，比任何人都幸福。然而他们并不知道，这短暂的幸福前面，还有更大的苦难在等着他们\u2026\u2026【独家/每周四更新，责编：半石】","created_at":1466492717,"title":"看不见听不见的爱","update_status":"连载中","updated_at":1466492717,"id":854,"user":{"pub_feed":0,"avatar_url":"http://f2.kkmh.com/image/160621/423m3brwe.webp-w180","grade":1,"nickname":"nasty cat/Daum Webtoon","reg_type":"author","id":15215177},"label_id":23,"order":400,"comics_count":55},"shared_count":0,"id":28484,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false},{"info_type":0,"can_view":true,"updated_count":0,"label_color":"#ff7300","cover_image_url":"http://f2.kkmh.com/image/170626/h8zy0wmwv.webp-w640","storyboard_cnt":65,"created_at":1498691106,"title":"第40话 小云！小芸！（2）","url":"http://www.kuaikanmanhua.com/comics/28231","likes_count":11719,"updated_at":1498458769,"selling_kk_currency":0,"comments_count":199,"label_text":"爆笑","zoomable":0,"is_free":true,"push_flag":1,"topic":{"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161220/229tjt2tt.webp-w320","cover_image_url":"http://f2.kkmh.com/image/170329/b30yizpad.webp-w640","update_day":"(每周四更新)","description":"身体羸弱的少年桂小云误食龙珠，不但获得了八块腹肌人鱼线，还获得了一个美艳的未婚妻？【授权/每周四更新 责编：Uncle】","created_at":1474446017,"title":"你好！三公主","update_status":"连载中","updated_at":1474446017,"id":933,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/160801/7oz8v6u9v.webp-w180","grade":1,"nickname":"阿桂","reg_type":"author","id":19390707},"label_id":5,"order":0,"comics_count":40},"shared_count":0,"id":28231,"label_text_color":"#ffffff","serial_no":0,"status":"published","is_liked":false}]
+         * recommend : []
+         * timestamp : 1498665600
+         * since : 1498691106
+         */
+
+        private int timestamp;
+        private int since;
+        private List<ComicsBean> comics;
+        private List<?> recommend;
+
+        public int getTimestamp() {
+            return timestamp;
+        }
+
+        public void setTimestamp(int timestamp) {
+            this.timestamp = timestamp;
+        }
+
+        public int getSince() {
+            return since;
+        }
+
+        public void setSince(int since) {
+            this.since = since;
+        }
+
+        public List<ComicsBean> getComics() {
+            return comics;
+        }
+
+        public void setComics(List<ComicsBean> comics) {
+            this.comics = comics;
+        }
+
+        public List<?> getRecommend() {
+            return recommend;
+        }
+
+        public void setRecommend(List<?> recommend) {
+            this.recommend = recommend;
+        }
+
+        public static class ComicsBean {
+            /**
+             * info_type : 0
+             * can_view : true
+             * updated_count : 0
+             * label_color : #fa6499
+             * cover_image_url : http://f2.kkmh.com/image/170628/c00onsgg6.webp-w640
+             * storyboard_cnt : 60
+             * created_at : 1498696822
+             * title : 第26话 会长的野望
+             * url : http://www.kuaikanmanhua.com/comics/28694
+             * likes_count : 134068
+             * updated_at : 1498646059
+             * selling_kk_currency : 0
+             * comments_count : 2439
+             * label_text : 恋爱
+             * zoomable : 0
+             * is_free : true
+             * push_flag : 1
+             * topic : {"discover_image_url":"","vertical_image_url":"http://f2.kkmh.com/image/161226/th1gzi9gn.webp-w320","cover_image_url":"http://f2.kkmh.com/image/161226/0nk746yec.webp-w640","update_day":"(每周四更新)","description":"武力值MAX的道场继承人\u2014\u2014向小满，为了追男神，决定江湖洗手，转校做一个安安静静的柔弱女子。而未曾想到的是，踏入校园第一天，男神还没追到，却因超凡的战斗力，被学校不良少年误认为男神。究竟小满能否成为男神心中的理想型，顺利转变现有的画风呢？【独家/每周四更新 责编：半石】","created_at":1482734574,"title":"当校霸爱上学霸","update_status":"连载中","updated_at":1482734574,"id":991,"user":{"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/161226/qcezbh4i7.webp-w180","grade":1,"nickname":"灿灿 /夏天岛","reg_type":"author","id":28863310},"label_id":15,"order":480,"comics_count":29}
+             * shared_count : 0
+             * id : 28694
+             * label_text_color : #ffffff
+             * serial_no : 0
+             * status : published
+             * is_liked : false
+             */
+
+            private int info_type;
+            private boolean can_view;
+            private int updated_count;
+            private String label_color;
+            private String cover_image_url;
+            private int storyboard_cnt;
+            private int created_at;
+            private String title;
+            private String url;
+            private int likes_count;
+            private int updated_at;
+            private int selling_kk_currency;
+            private int comments_count;
+            private String label_text;
+            private int zoomable;
+            private boolean is_free;
+            private int push_flag;
+            private TopicBean topic;
+            private int shared_count;
+            private int id;
+            private String label_text_color;
+            private int serial_no;
+            private String status;
+            private boolean is_liked;
+
+            public int getInfo_type() {
+                return info_type;
+            }
+
+            public void setInfo_type(int info_type) {
+                this.info_type = info_type;
+            }
+
+            public boolean isCan_view() {
+                return can_view;
+            }
+
+            public void setCan_view(boolean can_view) {
+                this.can_view = can_view;
+            }
+
+            public int getUpdated_count() {
+                return updated_count;
+            }
+
+            public void setUpdated_count(int updated_count) {
+                this.updated_count = updated_count;
+            }
+
+            public String getLabel_color() {
+                return label_color;
+            }
+
+            public void setLabel_color(String label_color) {
+                this.label_color = label_color;
+            }
+
+            public String getCover_image_url() {
+                return cover_image_url;
+            }
+
+            public void setCover_image_url(String cover_image_url) {
+                this.cover_image_url = cover_image_url;
+            }
+
+            public int getStoryboard_cnt() {
+                return storyboard_cnt;
+            }
+
+            public void setStoryboard_cnt(int storyboard_cnt) {
+                this.storyboard_cnt = storyboard_cnt;
+            }
+
+            public int getCreated_at() {
+                return created_at;
+            }
+
+            public void setCreated_at(int created_at) {
+                this.created_at = created_at;
+            }
+
+            public String getTitle() {
+                return title;
+            }
+
+            public void setTitle(String title) {
+                this.title = title;
+            }
+
+            public String getUrl() {
+                return url;
+            }
+
+            public void setUrl(String url) {
+                this.url = url;
+            }
+
+            public int getLikes_count() {
+                return likes_count;
+            }
+
+            public void setLikes_count(int likes_count) {
+                this.likes_count = likes_count;
+            }
+
+            public int getUpdated_at() {
+                return updated_at;
+            }
+
+            public void setUpdated_at(int updated_at) {
+                this.updated_at = updated_at;
+            }
+
+            public int getSelling_kk_currency() {
+                return selling_kk_currency;
+            }
+
+            public void setSelling_kk_currency(int selling_kk_currency) {
+                this.selling_kk_currency = selling_kk_currency;
+            }
+
+            public int getComments_count() {
+                return comments_count;
+            }
+
+            public void setComments_count(int comments_count) {
+                this.comments_count = comments_count;
+            }
+
+            public String getLabel_text() {
+                return label_text;
+            }
+
+            public void setLabel_text(String label_text) {
+                this.label_text = label_text;
+            }
+
+            public int getZoomable() {
+                return zoomable;
+            }
+
+            public void setZoomable(int zoomable) {
+                this.zoomable = zoomable;
+            }
+
+            public boolean isIs_free() {
+                return is_free;
+            }
+
+            public void setIs_free(boolean is_free) {
+                this.is_free = is_free;
+            }
+
+            public int getPush_flag() {
+                return push_flag;
+            }
+
+            public void setPush_flag(int push_flag) {
+                this.push_flag = push_flag;
+            }
+
+            public TopicBean getTopic() {
+                return topic;
+            }
+
+            public void setTopic(TopicBean topic) {
+                this.topic = topic;
+            }
+
+            public int getShared_count() {
+                return shared_count;
+            }
+
+            public void setShared_count(int shared_count) {
+                this.shared_count = shared_count;
+            }
+
+            public int getId() {
+                return id;
+            }
+
+            public void setId(int id) {
+                this.id = id;
+            }
+
+            public String getLabel_text_color() {
+                return label_text_color;
+            }
+
+            public void setLabel_text_color(String label_text_color) {
+                this.label_text_color = label_text_color;
+            }
+
+            public int getSerial_no() {
+                return serial_no;
+            }
+
+            public void setSerial_no(int serial_no) {
+                this.serial_no = serial_no;
+            }
+
+            public String getStatus() {
+                return status;
+            }
+
+            public void setStatus(String status) {
+                this.status = status;
+            }
+
+            public boolean isIs_liked() {
+                return is_liked;
+            }
+
+            public void setIs_liked(boolean is_liked) {
+                this.is_liked = is_liked;
+            }
+
+            public static class TopicBean {
+                /**
+                 * discover_image_url :
+                 * vertical_image_url : http://f2.kkmh.com/image/161226/th1gzi9gn.webp-w320
+                 * cover_image_url : http://f2.kkmh.com/image/161226/0nk746yec.webp-w640
+                 * update_day : (每周四更新)
+                 * description : 武力值MAX的道场继承人——向小满，为了追男神，决定江湖洗手，转校做一个安安静静的柔弱女子。而未曾想到的是，踏入校园第一天，男神还没追到，却因超凡的战斗力，被学校不良少年误认为男神。究竟小满能否成为男神心中的理想型，顺利转变现有的画风呢？【独家/每周四更新 责编：半石】
+                 * created_at : 1482734574
+                 * title : 当校霸爱上学霸
+                 * update_status : 连载中
+                 * updated_at : 1482734574
+                 * id : 991
+                 * user : {"pub_feed":1,"avatar_url":"http://f2.kkmh.com/image/161226/qcezbh4i7.webp-w180","grade":1,"nickname":"灿灿 /夏天岛","reg_type":"author","id":28863310}
+                 * label_id : 15
+                 * order : 480
+                 * comics_count : 29
+                 */
+
+                private String discover_image_url;
+                private String vertical_image_url;
+                private String cover_image_url;
+                private String update_day;
+                private String description;
+                private int created_at;
+                private String title;
+                private String update_status;
+                private int updated_at;
+                private int id;
+                private UserBean user;
+                private int label_id;
+                private int order;
+                private int comics_count;
+
+                public String getDiscover_image_url() {
+                    return discover_image_url;
+                }
+
+                public void setDiscover_image_url(String discover_image_url) {
+                    this.discover_image_url = discover_image_url;
+                }
+
+                public String getVertical_image_url() {
+                    return vertical_image_url;
+                }
+
+                public void setVertical_image_url(String vertical_image_url) {
+                    this.vertical_image_url = vertical_image_url;
+                }
+
+                public String getCover_image_url() {
+                    return cover_image_url;
+                }
+
+                public void setCover_image_url(String cover_image_url) {
+                    this.cover_image_url = cover_image_url;
+                }
+
+                public String getUpdate_day() {
+                    return update_day;
+                }
+
+                public void setUpdate_day(String update_day) {
+                    this.update_day = update_day;
+                }
+
+                public String getDescription() {
+                    return description;
+                }
+
+                public void setDescription(String description) {
+                    this.description = description;
+                }
+
+                public int getCreated_at() {
+                    return created_at;
+                }
+
+                public void setCreated_at(int created_at) {
+                    this.created_at = created_at;
+                }
+
+                public String getTitle() {
+                    return title;
+                }
+
+                public void setTitle(String title) {
+                    this.title = title;
+                }
+
+                public String getUpdate_status() {
+                    return update_status;
+                }
+
+                public void setUpdate_status(String update_status) {
+                    this.update_status = update_status;
+                }
+
+                public int getUpdated_at() {
+                    return updated_at;
+                }
+
+                public void setUpdated_at(int updated_at) {
+                    this.updated_at = updated_at;
+                }
+
+                public int getId() {
+                    return id;
+                }
+
+                public void setId(int id) {
+                    this.id = id;
+                }
+
+                public UserBean getUser() {
+                    return user;
+                }
+
+                public void setUser(UserBean user) {
+                    this.user = user;
+                }
+
+                public int getLabel_id() {
+                    return label_id;
+                }
+
+                public void setLabel_id(int label_id) {
+                    this.label_id = label_id;
+                }
+
+                public int getOrder() {
+                    return order;
+                }
+
+                public void setOrder(int order) {
+                    this.order = order;
+                }
+
+                public int getComics_count() {
+                    return comics_count;
+                }
+
+                public void setComics_count(int comics_count) {
+                    this.comics_count = comics_count;
+                }
+
+                public static class UserBean {
+                    /**
+                     * pub_feed : 1
+                     * avatar_url : http://f2.kkmh.com/image/161226/qcezbh4i7.webp-w180
+                     * grade : 1
+                     * nickname : 灿灿 /夏天岛
+                     * reg_type : author
+                     * id : 28863310
+                     */
+
+                    private int pub_feed;
+                    private String avatar_url;
+                    private int grade;
+                    private String nickname;
+                    private String reg_type;
+                    private int id;
+
+                    public int getPub_feed() {
+                        return pub_feed;
+                    }
+
+                    public void setPub_feed(int pub_feed) {
+                        this.pub_feed = pub_feed;
+                    }
+
+                    public String getAvatar_url() {
+                        return avatar_url;
+                    }
+
+                    public void setAvatar_url(String avatar_url) {
+                        this.avatar_url = avatar_url;
+                    }
+
+                    public int getGrade() {
+                        return grade;
+                    }
+
+                    public void setGrade(int grade) {
+                        this.grade = grade;
+                    }
+
+                    public String getNickname() {
+                        return nickname;
+                    }
+
+                    public void setNickname(String nickname) {
+                        this.nickname = nickname;
+                    }
+
+                    public String getReg_type() {
+                        return reg_type;
+                    }
+
+                    public void setReg_type(String reg_type) {
+                        this.reg_type = reg_type;
+                    }
+
+                    public int getId() {
+                        return id;
+                    }
+
+                    public void setId(int id) {
+                        this.id = id;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+TitleBean.java
+public class TitleBean extends DataSupport {
+    String title;
+
+    @Override
+    public String toString() {
+        return "TitleBean{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+
+    public TitleBean(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+}
+
+
+pag fragment
+
+Fragment01.java
+public class Fragment01 extends Fragment {
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment01,container,false);
+        tabLayout = (TabLayout) view.findViewById(R.id.tablayout1);
+        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+
+        tabLayout.addTab(tabLayout.newTab().setText("推荐"));
+        tabLayout.addTab(tabLayout.newTab().setText("电子商务"));
+        tabLayout.addTab(tabLayout.newTab().setText("互联网金融"));
+        tabLayout.addTab(tabLayout.newTab().setText("物联网"));
+
+        viewPager.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
+
+            @Override
+            public int getCount() {
+                return 4;
+            }
+
+            @Override
+            public Fragment getItem(int position) {
+                Fragment fragment =null;
+                fragment = new Fragment01_1();
+                Bundle bundle = new Bundle();
+                bundle.putInt("name",position);
+                fragment.setArguments(bundle);
+                return fragment;
+            }
+        });
+        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setText("推荐");
+        tabLayout.getTabAt(1).setText("电子商务");
+        tabLayout.getTabAt(2).setText("互联网金融");
+        tabLayout.getTabAt(3).setText("物联网");
+
+        return view;
+    }
+}
+
+
+Fragment01_1.java
+
+public class Fragment01_1 extends Fragment implements XListView.IXListViewListener{
+    private Banner banner;
+    private String urlpath = "http://api.kkmh.com/v1/topic_new/discovery_list?gender=0&sa_event=eyJwcm9qZWN0Ijoia3VhaWthbl9hcHAiLCJ0aW1lIjoxNDg3ODM5MDM5MzE1LCJwcm9wZXJ0aWVzIjp7IkhvbWVwYWdlVGFiTmFtZSI6IueDremXqCIsIlZDb21tdW5pdHlUYWJOYW1lIjoi54Ot6ZeoIiwiJG9zX3ZlcnNpb24iOiI0LjIuMiIsIkdlbmRlclR5cGUiOiLlpbPniYgiLCJGcm9tRmluZENhdGVnb3J5VGFiTmFtZSI6IuWFqOmDqCIsIklzQXV0b0xvYWQiOmZhbHNlLCIkbGliX3ZlcnNpb24iOiIxLjYuMzQiLCIkbmV0d29ya190eXBlIjoiV0lGSSIsIiR3aWZpIjp0cnVlLCIkbWFudWZhY3R1cmVyIjoic2Ftc3VuZyIsIkZyb21GaW5kVGFiTmFtZSI6IuaOqOiNkCIsIiRzY3JlZW5faGVpZ2h0Ijo1NzYsIkNhdGVnb3J5Ijoi5peg5rOV6I635Y-WIiwiSG9tZXBhZ2VVcGRhdGVEYXRlIjowLCJQcm9wZXJ0eUV2ZW50IjoiUmVhZEZpbmRQYWdlIiwiRmluZFRhYk5hbWUiOiLmjqjojZAiLCJhYnRlc3RfZ3JvdXAiOjQ2LCIkc2NyZWVuX3dpZHRoIjoxMDI0LCJGaW5kQ2F0ZWdvcnlUYWJOYW1lIjoi5YWo6YOoIiwiJG9zIjoiQW5kcm9pZCIsIlRyaWdnZXJQYWdlIjoiSG9tZVBhZ2UiLCIkY2FycmllciI6IkNNQ0MiLCIkbW9kZWwiOiJHVC1QNTIxMCIsIiRhcHBfdmVyc2lvbiI6IjMuOC4xIn0sInR5cGUiOiJ0cmFjayIsImRpc3RpbmN0X2lkIjoiQTo5MDUxMDQyNzYzNzU1MTA5Iiwib3JpZ2luYWxfaWQiOiJBOjkwNTEwNDI3NjM3NTUxMDkiLCJldmVudCI6IlJlYWRGaW5kUGFnZSJ9";
+    private String listurl = "http://api.kkmh.com/v1/daily/comic_lists/0?since=0&gender=0&sa_event=eyJwcm9qZWN0Ijoia3VhaWthbl9hcHAiLCJ0aW1lIjoxNDg3ODI4ODU4NjAwLCJwcm9wZXJ0aWVzIjp7IkhvbWVwYWdlVGFiTmFtZSI6IueDremXqCIsIlZDb21tdW5pdHlUYWJOYW1lIjoi54Ot6ZeoIiwiJG9zX3ZlcnNpb24iOiI0LjIuMiIsIkdlbmRlclR5cGUiOiLlpbPniYgiLCJGcm9tSG9tZXBhZ2VUYWJOYW1lIjoi54Ot6ZeoIiwiJGxpYl92ZXJzaW9uIjoiMS42LjM0IiwiJG5ldHdvcmtfdHlwZSI6IldJRkkiLCIkd2lmaSI6dHJ1ZSwiJG1hbnVmYWN0dXJlciI6InNhbXN1bmciLCJGcm9tSG9tZXBhZ2VVcGRhdGVEYXRlIjowLCIkc2NyZWVuX2hlaWdodCI6NTc2LCJIb21lcGFnZVVwZGF0ZURhdGUiOjAsIlByb3BlcnR5RXZlbnQiOiJSZWFkSG9tZVBhZ2UiLCJGaW5kVGFiTmFtZSI6IuaOqOiNkCIsImFidGVzdF9ncm91cCI6NDYsIiRzY3JlZW5fd2lkdGgiOjEwMjQsIiRvcyI6IkFuZHJvaWQiLCJUcmlnZ2VyUGFnZSI6IkhvbWVQYWdlIiwiJGNhcnJpZXIiOiJDTUNDIiwiJG1vZGVsIjoiR1QtUDUyMTAiLCIkYXBwX3ZlcnNpb24iOiIzLjguMSJ9LCJ0eXBlIjoidHJhY2siLCJkaXN0aW5jdF9pZCI6IkE6OTA1MTA0Mjc2Mzc1NTEwOSIsIm9yaWdpbmFsX2lkIjoiQTo5MDUxMDQyNzYzNzU1MTA5IiwiZXZlbnQiOiJSZWFkSG9tZVBhZ2UifQ%3D%3D";
+    private XListView xListView;
+    private List<String>  images;
+    private List<String> titles;
+    private MyAdapter adapter;
+    private List<Listbean.DataBean.ComicsBean> list ;
+    private TextView text;
+    public Handler handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                Gson gson = new Gson();
+                if (msg.what==0){
+                    Images img = gson.fromJson(msg.obj.toString(), Images.class);
+                    List<Images.DataBean.InfosBean> infos = img.getData().getInfos();
+                    List<Images.DataBean.InfosBean.BannersBean> banners = infos.get(0).getBanners();
+                    for (Images.DataBean.InfosBean.BannersBean bean:banners){
+                        images.add(bean.getPic());
+                        titles.add(bean.getTarget_title());
+                        new TitleBean(bean.getTarget_title()).save();
+                    }
+                    banner.setImages(images);
+                    banner.setBannerTitles(titles);
+                    banner.start();
+                }else{
+                    Listbean listbean = gson.fromJson(msg.obj.toString(), Listbean.class);
+                    List<Listbean.DataBean.ComicsBean> comics = listbean.getData().getComics();
+                    list.addAll(comics);
+                    adapter.notifyDataSetChanged();
+                }
+            }
+        };
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment01_1,container,false);
+
+        images = new ArrayList<>();
+        titles = new ArrayList<>();
+        list = new ArrayList<>();
+        text = (TextView) view.findViewById(R.id.textVvvv);
+        xListView = (XListView) view.findViewById(R.id.xlisview);
+        banner = (Banner) view.findViewById(R.id.banner);
+        //设置图片加载器
+        banner.setImageLoader(new GlideImageLoader());
+        //设置样式
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE);
+        //设置适配器
+        adapter = new MyAdapter(getActivity(),list);
+        xListView.setAdapter(adapter);
+        xListView.setPullLoadEnable(true);
+        xListView.setXListViewListener(this);
+
+        //获取的上一次bundle
+        Bundle bundle = getArguments();
+        int name = bundle.getInt("name");
+        switch (name){
+            case 0:banner.setVisibility(View.VISIBLE);
+                   xListView.setVisibility(View.VISIBLE);
+                   text.setVisibility(View.GONE);
+                break;
+            default:banner.setVisibility(View.GONE);
+                xListView.setVisibility(View.GONE);
+                text.setVisibility(View.VISIBLE);
+                break;
+        }
+        text.setText(name+"");
+        //轮播图的数据
+        new Thread(){
+            @Override
+            public void run() {
+                String s = UrlUtils.geturlPath(urlpath);
+                Message msg = Message.obtain();
+                msg.obj = s;
+                msg.what =0;
+                handler.sendMessage(msg);
+            }
+        }.start();
+        //xlistview的数据
+        new Thread(){
+            @Override
+            public void run() {
+                loaddata();
+            }
+
+        }.start();
+        return view;
+    }
+    private void loaddata() {
+    String s = UrlUtils.geturlPath(listurl);
+    Message msg = Message.obtain();
+    msg.obj = s;
+    msg.what =1;
+    handler.sendMessage(msg);
+    }
+
+    /**
+     * 停止xlistview的加载和更新
+     */
+    private void stopp(){
+        xListView.stopLoadMore();
+        xListView.stopRefresh();
+        xListView.setRefreshTime("刚才");
+    }
+
+    /**
+     * 刷新信息
+     */
+    @Override
+    public void onRefresh() {
+        new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(2000);//2s后刷新数据
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                //先清除list里的数据
+                list.clear();
+                //重新请求数据
+                loaddata();
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        stopp();
+                    }
+                });
+            }
+        }.start();
+
+    }
+
+    /**
+     * 加载更多 因为接口问题 2s后就停止
+     */
+    @Override
+    public void onLoadMore() {
+        new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        stopp();
+                    }
+                });
+            }
+        }.start();
+
+    }
+}
+
+
+Fragment02.java
+public class Fragment02 extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment02,container,false);
+        return view;
+    }
+}
+
+
+
+Fragment03.java
+public class Fragment03 extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment03,container,false);
+        return view;
+    }
+}
+
+Fragment04.java
+
+public class Fragment04 extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment04,container,false);
+        return view;
+    }
+}
+ 
+pag  Utils
+
+UrlUtils.java
+public class UrlUtils {
+    public static String geturlPath(String urlPath) {
+            try {
+                URL url = new URL(urlPath);
+                HttpURLConnection conn =(HttpURLConnection)url.openConnection();
+                conn.connect();
+
+                if(conn.getResponseCode()==200){
+                    InputStream in = conn.getInputStream();
+                    byte [] buff =new byte[1024];
+                    int len =-1;
+                    StringBuffer sb=new StringBuffer();
+                    while ((len=in.read(buff))!=-1){
+                        sb.append(new String(buff,0,len,"utf-8"));
+                    }
+                    Log.e("base", "loadData: "+sb.toString());
+                    in.close();
+                    return sb.toString();
+                }
+                conn.disconnect();
+            } catch (Exception e) {
+                Log.e("base", "catch----------: ");
+                e.printStackTrace();
+            }
+        return null;
+    }
+}
+
+
+ 
+
+
